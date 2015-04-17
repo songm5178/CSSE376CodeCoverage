@@ -89,6 +89,12 @@ public class HotelTest
         //mocks.VerifyAll();
         EasyMock.verify(mockDB);
     }
+	
+	@Test
+	public void TestGetMiles(){
+		Hotel target = new Hotel(1);
+		assertEquals(0, target.getMiles());
+	}
     @Test
     public void TestThatHotelDoesGetRoomCountFromDatabase()
     {
@@ -99,7 +105,7 @@ public class HotelTest
             Rooms.add(i + "");
         }
 
-        // FIXME: what is the EasyMock equivalent, if any?
+        // FIXED: what is the EasyMock equivalent, if any?
         //EasyMock.expect(mockDB.Rooms).PropertyBehavior();
 
         EasyMock.replay(mockDB);
