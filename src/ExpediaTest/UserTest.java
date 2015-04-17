@@ -1,17 +1,21 @@
 package ExpediaTest;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
-
-import Expedia.*;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import Expedia.Booking;
+import Expedia.Car;
+import Expedia.Discount;
+import Expedia.Flight;
+import Expedia.Hotel;
+import Expedia.ServiceLocator;
+import Expedia.User;
 public class UserTest
 {	
 	private User target;
